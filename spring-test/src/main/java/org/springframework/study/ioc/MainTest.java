@@ -1,10 +1,11 @@
-package org.springframework.study;
+package org.springframework.study.ioc;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
 public class MainTest {
     public static void main(String[] args) {
-        AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfig.class);
+        AnnotationConfigApplicationContext applicationContext =
+                new AnnotationConfigApplicationContext(BeanConfig.class);
 
 
         String[] names = applicationContext.getBeanDefinitionNames();
